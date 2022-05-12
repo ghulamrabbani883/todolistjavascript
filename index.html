@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List using JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <section class="section-center">
+            <h2>Todo List App using Vanilla JavaScript</h2>
+            <form class="todoform">
+                <p class="alert"></p>
+                <div class="form-elem">
+                    <input type="text" class="inputtext" name="todo" id="todo" placeholder="e.g. marketing, studying" autofocus />
+                    <input type="submit" class="submit" value="Submit" />
+                </div>
+            </form>
+            <article class="todo-container">
+                <div class="todo-list">
+                    <!-- <div class="todo-item">
+                        <p class="title">Item 1</p>
+                        <div class="button-group">
+                            <ion-icon class="delete" name="trash-outline"></ion-icon>
+                            <ion-icon class="edit" name="create-outline"></ion-icon>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- clear button -->
+                <div class="clear-btn">
+                    <button class="clear">Clear All</button>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.section-center {
+    margin: 100px 0px;
+    background-color: white;
+    min-height: 200px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-center h2 {
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom: 2px solid red;
+}
+
+.todoform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.alert {
+    background-color: azure;
+    text-transform: capitalize;
+    width: 400px;
+    height: 20px;
+    display: none;
+}
+
+.alert-danger {
+    color: red;
+    background-color: wheat;
+    display: block !important;
+}
+
+.alert-success {
+    color: rgb(4, 86, 28);
+    background-color: wheat;
+    display: block !important;
+}
+
+.inputtext {
+    border: none;
+    border-bottom: 1px solid green;
+    outline: none;
+    width: 300px;
+    height: 30px;
+}
+
+.submit {
+    background-color: white;
+    color: blue;
+    font-size: 16px;
+    height: 30px;
+    width: 100px;
+    border: 1px solid blue;
+    cursor: pointer;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.submit:hover {
+    background-color: bisque;
+}
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.show-container {
+    visibility: visible;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 3px 5px;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.delete {
+    transition: all .5s;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 2.5px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.delete:hover {
+    color: brown;
+}
+
+.edit {
+    transition: all .5s;
+    font-size: 20px;
+    margin-left: 2.5px;
+    color: blue;
+    cursor: pointer;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.edit:hover {
+    color: skyblue;
+}
+
+.clear {
+    border: 1px solid red;
+    color: red;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    margin: 20px 0px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.clear:hover {
+    border: 1px solid brown;
+    background-color: white;
+    color: brown;
+}
+
+@media (max-width:1100px) {
+    .section-center {
+        margin: 100px 0px;
+        width: 60%;
+    }
+    .alert {
+        height: 20px;
+        width: 400px;
+    }
+}
+
+@media (max-width:750px) {
+    .section-center {
+        margin: 70px 0px;
+        width: 80%;
+    }
+    .todo-item {
+        width: 300px;
+    }
+    .alert {
+        height: 20px;
+        width: 300px;
+    }
+}
+
+@media (max-width:600px) {
+    .section-center {
+        margin: 50px 0px;
+        width: 95%;
+    }
+    .todo-item {
+        width: 300px;
+    }
+    .alert {
+        height: 15px;
+        width: 300px;
+    }
+    .submit {
+        height: 15px;
+        font-size: 12px;
+        width: 50px;
+    }
+    .section-center h2 {
+        padding: 5px 0px;
+    }
+    .inputtext {
+        width: 300px;
+        height: 15px;
+    }
+}
